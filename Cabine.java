@@ -1,33 +1,41 @@
-public class Cabine{
-  public int Surface;
-  public int NbreChambres;
-  final int IDENTIFIANT=3;
 
 
-Cabine(){
-	this.Surface=0;
-	this.NbreChambres=0;
-       } 
+public class Cabine {
+	private Integer idCabine = 3;
+	private String ca1;
+	private String ca2;
 	
-
-Cabine(int Surface,int NbreChambres ){
-	this.Surface=Surface;
-	this.NbreChambres=NbreChambres;
-        
+	public Cabine() {
+		this.ca1 = "ca1";
+		this.ca2 = "ca2";
+	}
 	
-	}	
+	public Cabine(String ca1, String ca2) {
+		this.ca1 = ca1;
+		this.ca2 = ca2;
+	}
 
+	public Integer getIdCabine() {
+		return idCabine;
+	}
 
-class Surface{
-public void Surface(){
-       System.out.println("20");
-				
-}
-}
+	public void setIdCabine(Integer idCabine) {
+		this.idCabine = idCabine;
+	}
 
+	public String getCa1() {
+		return ca1;
+	}
 
+	public void setCa1(String ca1) {
+		this.ca1 = ca1;
+	}
 
+	public String getCa2() {
+		return ca2;
+	}
 
-
-
+	public void setCa2(String ca2) {
+		this.ca2 = ca2;
+	}
 }
